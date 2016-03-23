@@ -1,0 +1,421 @@
+/*Naslovna*/
+
+body{
+	background-color:#DEB887;
+
+}
+
+form{
+		background-color:#3D2B1F;		
+}
+/*naslovna traka*/
+nav{
+	background-color:  #3D2B1F;
+	width: 100%;
+	margin: 0px;
+}
+
+nav>a{
+	font-family: 'Dosis', sans-serif;
+	font-size: 150%;
+	color: white;
+	width:20px;
+	text-decoration: none;
+}
+nav>a:last-child{
+	text-decoration: none;
+	border-right-style: none;
+}
+nav>a:first-child{
+	padding-left: 25px;
+	text-decoration: none;
+	border-right-style: none;
+}
+nav>a:hover{
+	color:#CC7722;
+}
+
+.opcija{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.opcija>a{
+	padding: 0px;
+padding-right: 25px;
+}
+
+#podnozje{
+	background-color:  #3D2B1F;
+	font-family: 'Dosis', sans-serif;
+	color: white;	
+    text-align: center;
+	
+	width: 100%;	
+	
+}
+
+/*forma*/
+
+.labela{
+	font-family: 'Dosis', sans-serif;
+	color:white;
+}
+
+#podnaslov{
+	color:white;
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 20px;
+}
+.polje-unos{
+ 
+	font-family: 'Dosis', sans-serif;
+	font-size: 20px;
+	border-color: #CC7722;
+	border-width: 1px;
+	border-style: solid;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+#formdiv{
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top:30px;
+	padding-bottom: 60px;
+
+	/*background-color: #3D2B1F;*/
+	}
+.okvir{
+	margin-left: 10%;
+	margin-right: 10%;
+     border:1px solid white;
+     padding-right:10px; 
+      padding-left:10px; 
+      background-color: #8B7464;
+	}
+#dugme{
+font-family: 'Dosis', sans-serif;
+font-size: 20px;
+color: white;
+background-color: #CC7722;
+border-color: #CC7722;
+float:right;
+margin-top: -38px;
+
+}
+
+#poruka{
+	width: 100%;
+
+}
+
+.red{
+	width: 100%;
+	clear: both;
+	margin: 15px 0px;
+}
+
+.polje-red{
+	position: relative;
+	display: inline;
+	width: 45%;
+	margin-left: 10%;
+	float: left;
+}
+
+.polje-red:first-child{
+	margin-left: 0%;
+}
+
+
+.polje-grupa>.polje-unos:focus{
+	border-width: 2px;
+	border-color: #cc3399;
+}
+
+
+
+/*logo*/
+
+#logo{
+	position: relative;
+	height: 32px;
+	width: 300px;
+	margin: 5px auto;
+	margin-top: -115px;
+	
+
+}
+#baza{
+	position: relative;
+	height: 30px;
+	width: 100px;
+	background-color:#3D2B1F;
+	margin: auto;
+	margin-top: 270px;
+	z-index: 2;
+	bottom: 0;
+}
+
+.kockice{
+    height: 30px;
+	width: 30px;
+	background-color: #3D2B1F;
+	position: absolute;
+}
+
+#desna-kockica{
+	margin-left: 85px;
+	transform:skew(45deg);
+}
+#lijeva-kockica{
+margin-left: -15px;
+	transform:skew(135deg);
+}
+
+#sredina{
+	height: 100px;
+	width: 100px;
+    background-color: #3D2B1F;
+	position: absolute;
+	margin-left: 100px;
+	margin-top: -134px;
+	z-index: -2;
+}
+
+
+
+#lijevo-krilo{
+	height: 100px;
+	width: 56px;
+	transform: skew(207deg);
+	 background-color: #3D2B1F;
+	margin-left: -27px;
+	margin-top: -100px;
+	z-index: -1;
+
+}
+#desno-krilo{
+	height: 100px;
+	width:41px;
+	transform:skew(-22deg);
+	 background-color: #3D2B1F;
+	margin-left: 79px;
+	z-index: -1;
+}
+
+#srednja-elipsa{
+height: 50px;
+width: 200px;
+border-radius: 50%;
+background-color:#DEB887 ;
+margin-left: -56px;
+margin-top: -134px;
+z-index: -2;
+
+}
+
+#poklopac{
+height: 50px;
+width: 200px;
+border-radius: 50%;
+background-color: #3D2B1F;
+position: absolute;
+margin-top: -5px;
+z-index: 4;
+}
+
+#linija{
+height: 5px;
+width: 200px;
+background-color:#DEB887 ;
+margin-top: 22px;
+border-radius: 105%;
+}
+
+#linijice-donja{
+	
+height: 5px;
+width: 25px;
+background-color:#DEB887;
+border-radius: 105%;
+transform: rotate(84deg);
+margin-left: 26px;
+margin-top: -5px;
+
+}
+
+#linijice-gornja{
+	
+height: 5px;
+width: 25px;
+background-color:#DEB887 ;
+border-radius: 105%;
+transform: rotate(84deg);
+margin-left: 40px;
+margin-top: -14px;
+
+}
+#ruckica{
+height: 50px;
+width: 100px;
+border-radius: 50%;
+background-color: #3D2B1F;
+z-index: -2;
+transform: rotate(135deg);
+margin-left: 82px;
+margin-top: 10px;
+}
+
+#razdvojnica{
+height: 5px;
+width: 200px;
+background-color:#DEB887;
+margin-top: 22px;
+border-radius: 105%;
+transform: rotate(112deg);
+position: absolute;
+margin-left: 23px;
+z-index: -1;
+}
+/*linkovi*/
+ul.moja-lista{
+color: #cc3399;
+ font-family: 'Dosis', sans-serif;
+ list-style-type:none;  
+ list-style-position: inside;
+ padding: 20px;
+}
+
+.moja-lista li{
+	margin:5px;
+	padding: 10px;
+	font-size: 20px;
+
+}
+
+.moja-lista li:hover{
+	
+	list-style-image: url("http://shopkhadi.com/front_store/images/store/wishlist-icon.png");
+}
+
+.moja-lista a{
+	text-decoration: none;
+    color: white;
+}
+
+.moja-lista a:hover{
+text-decoration: underline;
+color: #CC7722;
+}
+
+.moja-lista a:visited 
+{
+
+ text-decoration:none}
+
+.linkovi{
+	margin-left: 0%;
+	margin-right: 0%;
+	background-color: #3D2B1F;
+	padding-top:30px;
+	padding-bottom: 60px;
+}
+
+
+/*tabela*/
+
+.tabela{
+	border:2px solid black;
+	font-family: 'Dosis', sans-serif;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 20px;
+	margin: auto;
+}
+
+.tabela th{
+	border:2px solid black;
+	 background-color: #CC7722;
+	padding: 20px;
+
+
+}
+.tabela td{
+	border:2px solid black;
+	border-collapse: collapse;
+	padding: 20px;
+}
+
+.tabela tr:nth-child(odd){
+  border:2px solid black;
+  background-color: #8B7464;
+}
+
+.tabela tr:nth-child(even){
+  border:2px solid black;
+  background-color: white;
+}
+
+#table-div{
+	margin-left: 0%;
+	margin-right:0%;
+	padding-top:30px;
+	padding-bottom: 60px;
+	background-color: #3D2B1F;
+	}
+
+	/* Novosti */
+
+	.tijelo{
+	background-color: #3D2B1F;
+	margin-left: 0%;
+	margin-right: 0%;
+	padding-top:30px;
+	padding-bottom: 60px;
+	}
+
+	.novost{
+   
+     border:1px solid white;
+     padding-right:10px; 
+      padding-left:10px; 
+      background-color: #8B7464;
+      	position: relative;
+      	width: 30%;
+      	display: inline-block;
+
+	}
+
+
+
+img{
+	   
+    float: left;
+    padding: 5px;
+    margin: auto;
+    width: 50%;
+   display: block;
+
+}
+
+.vijest{
+	margin: 2px;
+	display: block;
+	font-family: 'Dosis',sans-serif;
+	text-align: justify;
+	
+}
+	
+.red-novosti{
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	width: 100%;
+
+}
