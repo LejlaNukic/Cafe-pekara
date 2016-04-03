@@ -21,8 +21,8 @@ function validiraj_ime(obj){
 
 function validiraj_ocjenu(obj){
 	
-	if(obj.value=="")document.getElementById("ocjena").style.background="white"
-	else if((obj.value)<1 || (obj.value)>10) document.getElementById("ocjena").style.background="red"
+	if(obj.value=="" && obj.validity.valid==true) document.getElementById("ocjena").style.background="white";
+	else if( obj.validity.valid==false || parseInt(obj.value)<1 || parseInt(obj.value)>10 ) document.getElementById("ocjena").style.background="red"
  	else document.getElementById("ocjena").style.background="white";
   // console.log((obj.value).match(re));
 }
@@ -59,8 +59,8 @@ function multiple_field_validacija(){
 
 	if(document.getElementById("klijentov-mail").value==""){ ima_maila=false;document.getElementById("klijentov-mail").style.backgroundColor="white";}
 	if(document.getElementById("klijentov-telefon").value=="") { ima_telefona=false;document.getElementById("klijentov-telefon").style.backgroundColor="white";}
-    if(obj4.value=="") obj4.style.backgroundColor="white";
-    if(obj5.value=="") obj5.style.backgroundColor="white";
+    validiraj_ocjenu(obj5);
+    validiraj_ime(obj1);
 if(obj3.value!="" && duzina_poruke>0 && duzina_poruke<1000 && ima_telefona==false && ima_maila==false){
 	obj1.style.background="red";
 	obj2.style.background="red";
