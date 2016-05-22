@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+ <?php
+ session_start();
+ ?>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cafe pekara</title>
+	<link rel="stylesheet" type="text/css" href="stil.css">
+	<link href='https://fonts.googleapis.com/css?family=Dosis:600' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+
+
+<script src="validacija.js"></script>
+
+<div id="logo">
+
+	<div id="baza">
+
+		<div class="kockice" id="desna-kockica"></div>
+		<div class="kockice" id="lijeva-kockica"></div>
+	</div>
+
+	<div id="sredina">
+		<div id="desno-krilo"></div>
+		<div id="lijevo-krilo"></div>
+		<div id="srednja-elipsa">
+			<div id="poklopac">
+				<div id="linija"></div>
+			</div>
+		</div>
+
+		<div id="razdvojnica"></div>
+        
+		<div id="ruckica">
+			<div id="linijice-gornja"></div>
+			<div id="linijice-donja"></div>
+
+		</div>
+	</div>
+    
+    
+
+
+</div>
+
+
+
+
+
+
+
+<nav class="opcija">
+<a href="index.php">Naslovna</a>
+<a href="tabela.php">Tabelarni podaci</a>
+<a href="link.php">Lista linkova</a>
+<a href="forma.php">Forma</a>
+<?php
+if(isset($_SESSION['korisnik'])){
+	print "<a href='dodavanje.php'>Dodaj novost</a>";
+	print "<a href='login.php?logout=1'>Odjava</a>";
+}
+else{
+	print "<a href='login.php'>Prijava</a>";
+}
+?>
+</nav>
+
+<form>
+   
+	<div id="formdiv">
+		
+         <h1 id="Podnaslov">Kontakt forma</h1>
+
+    <div class="okvir">
+		<div class="red">
+			<div class="polje-grupa polje-red">
+				<label class="labela" >Ime:</label><br>
+				<input class="polje-unos" placeholder="Ime" id="ime" onkeyup="validiraj_ime(this)">
+			</div>
+			
+			<div class="polje-grupa polje-red">
+				<label class="labela" >E-mail:</label><br>
+				<input id="klijentov-mail" type="email" class="polje-unos" placeholder="E-mail" onkeyup="validiraj_mail(this)">
+			</div>
+
+			
+		</div>
+
+
+		<div class="red">
+			
+
+			<div class="polje-grupa polje-red">
+				<label class="labela" >Telefon:</label><br>
+				<input type="tel" id="klijentov-telefon" class="polje-unos" placeholder="Telefon"  onkeyup="validiraj_telefon(this)">
+			</div>
+
+			<div class="polje-grupa polje-red">
+				<label class="labela" >Ocjena kvaliteta:</label><br>
+				<input type="number" id="ocjena" min="1" max="10"  class="polje-unos" placeholder="Ocjena"  onkeyup="validiraj_ocjenu(this)">
+			</div>
+		</div>
+
+		
+		<div class="red">
+
+			<div class="polje-grupa">
+			<label class="labela"  >Poruka:</label>
+			<textarea class="polje-unos" id="poruka" placeholder="Poruka"  onkeyup="validiraj_poruku(this)"></textarea> 			
+		</div>
+		</div>
+		
+			
+
+		<button id="dugme" onclick="multiple_field_validacija()">Posalji</button>
+    </div>
+	</div>
+
+</form>
+
+<div id="podnozje"><p >Copyright &copy; Web tehnologije 2015/2016.</p></div>
+
+
+</body>
+</html>
