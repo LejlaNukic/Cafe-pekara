@@ -89,7 +89,7 @@ CREATE TABLE IF NOT EXISTS `novost` (
   `slika` text COLLATE utf8_slovenian_ci NOT NULL,
   `tekst` text COLLATE utf8_slovenian_ci NOT NULL,
   `komentari` tinyint(1) NOT NULL,
-  `datum` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `datum` datetime NOT NULL,
   `autor` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `autor` (`autor`)
